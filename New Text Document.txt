@@ -1,0 +1,32 @@
+.image-container {
+  display: flex;
+  animation: slide 3s infinite;
+  -webkit-animation: slide 3s infinite;
+}
+@keyframes slide {
+  0% {
+    transform: translateX(0);
+    -webkit-transform: translateX(0);
+    -moz-transform: translateX(0);
+    -ms-transform: translateX(0);
+    -o-transform: translateX(0);
+  }
+  50% {
+    transform: translateX(-100%);
+    -webkit-transform: translateX(-100%);
+    -moz-transform: translateX(-100%);
+    -ms-transform: translateX(-100%);
+    -o-transform: translateX(-100%);
+  } /* Adjust percentage as per the image width */
+  100% {
+    transform: translateX(0%);
+    -webkit-transform: translateX(0%);
+    -moz-transform: translateX(0%);
+    -ms-transform: translateX(0%);
+    -o-transform: translateX(0%);
+  }
+}
+.animation {
+  width: 50%; /* Adjust the width as per your requirement */
+  height: auto; /* Adjust the height as per your requirement */
+}
